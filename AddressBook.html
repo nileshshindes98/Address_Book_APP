@@ -3,75 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address Book</title>
-    <link rel="stylesheet" href="./AddressStyle.css">
+    <link rel="stylesheet" href="AddressStyle.css">
+    <title>AddressBook</title>
 </head>
-
 <body>
-    <header class="header-content header">
-        <div class="log-content">
-            <img src="assets\images\logo.jpeg" alt="">
-        
-        <div>
-            <span class="address-text">Adress</span>
-            <span class="address-text">Book</span>
+    <div class="log-content">
+        <img src="logo.jpeg" alt="Address" class=""/>
         </div>
+    <div class="address-book-name">
+        <span class="address-text"></span><br>
+        <span class="address-text">  Book</span>
     </div>
-    
 
-    <div class="form-content">
-        <form class = "form" action="#"
-        onsubmit="save(); return false">
-    <div class="form-head">
-        PERSON ADDRESS FORM
+    <div class="center-box">
+        <div class="form-title">
+            <header>
+                <img src="..\images\cancelButton.png" alt="." />
+                <h2>PERSON ADDRESS FORM</h2>
+            </header>
+        </div>
+        
+    <form id="address-form">
+
+    <div class="row-content">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Your Name" required>
     </div>
+
     <div class="row-content">
-        <label class="label text"
-        for="name">Full Name</label>
-        <input class="input" type="text" id="name"
-        name="name" placeholder="Enter Your Name">
-    </div>`
-    
-    <div class="row-content">
-        <label class="address" 
-        for="address">Address</label>
-        <input class="address" type="text" id="address"
-        name="address" placeholder="Enter Your Address">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter Your Address" required>
     </div>
 
     <div class="row-content">
         <label class="label text" for="selectCity">Select City</label>
+    
+        <select class="label text" name="City" id="city">
+                <option value="1">Mumbai</option>
+                <option value="2">Pune</option>
+                <option value="3">Satara</option>
+                <option value="4">Kolhapur</option>
+                <option value="5">Bhopal</option>
+                <option value="6">Gwalior</option>
+                <option value="7">Indore</option>
+                <option value="8">Ujjain</option>
+                <option value="9">Varanasi</option>
+                <option value="10">Kanpur</option>
+        </select>
+        <label class="label text" for="selectState">Select State</label>
+        <select name="State" id="state">
+            <option value="1">Maharashtra</option>
+            <option value="2">Madhya Pradesh</option>
+            <option value="3">Uttar Pradesh</option>
+        </select>
     </div>
-    <select name="City" id="city">
-        <option value="1">Mumbai</option>
-        <option value="2">Pune</option>
-        <option value="3">Satara</option>
-        <option value="4">Kolhapur</option>
-        <option value="5">Bhopal</option>
-        <option value="6">Gwalior</option>
-        <option value="7">Indore</option>
-        <option value="8">Ujjain</option>
-        <option value="9">Varanasi</option>
-        <option value="10">Kanpur</option>
-    </select>
-    <select name="State" id="state">
-        <option value="1">Maharashtra</option>
-        <option value="2">Madhya Pradesh</option>
-        <option value="3">Uttar Pradesh</option>
-    </select>
 
     <div class="row-content">
         <label class="zipCode" for="zipCode"></label>
         <input class="zipCode" type="text" name="zipCode" 
         id="zipCode" placeholder="Zip Code">
     </div>
+
     <div class="row-content">
         <label for="phoneNumber"></label>
         <input class="phoneNumber" type="text" name="phoneNumber" 
         id="phoneNumber" placeholder="Phone Number">
     </div>
-</form>
+
+    <div class="button-container">
+        <button type="submit">Add</button>
+        <button type="reset">Reset</button>
     </div>
-</header>
+</form>
+</div>    
 </body>
 </html>

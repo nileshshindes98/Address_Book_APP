@@ -1,34 +1,84 @@
-body{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    height: 100%;
-}
-.header{
-    padding: 20px 0;
-    background-color: #ffffff;
-}
-.header-content{
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 0px solid lightblue;
     justify-content: center;
-}
-
-.logo-content{
-    display: flex;
-    border: 0px solid lightblue;
-    width: 70%;
-}
-.form-content{
-    background-color:transparent;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    border: 0px solid transparent;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    position: relative;
+  }
+  .address-book-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .log-content{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: cornflowerblue;
 }
-.form-head{
-    font: normal normal bold 24px/35px Roboto;
-    letter-spacing: 0px;
-    color: black;
+.center-box {
+    background-color: rgb(252, 251, 251);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    
+  }
+  .form-title{
+    display: flex;
+    background-color: lightskyblue;
+    padding: 10px;
+    border: 100%;
+    align-items: center;
+    border-color: black;
+    border-width: thick;
+  }
+  .form-title h2 {
+    margin: 5;
     
 }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .label {
+    font-size: small;
+    margin-bottom: 0px;
+  }
+  input, select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+    
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  button {
+    padding: 8px 16px;
+    background-color: #ccc;
+    border-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-style: double;
+  }
+   
+  button:hover {
+    background-color: #0056b3;
+  }
+  
